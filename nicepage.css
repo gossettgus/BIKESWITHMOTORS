@@ -44354,8 +44354,8 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-nav-1 {
+  font-weight: 400;
   font-size: 1rem;
-  font-weight: 700;
   line-height: 1;
   letter-spacing: -2px;
 }
@@ -44376,32 +44376,104 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 
+@media (max-width: 575px) {
+  .u-header .u-image-1 {
+    width: 309px;
+    height: 36px;
+    margin-top: 16px;
+    margin-left: 0;
+  }
 
+  .u-header .u-menu-1 {
+    margin-top: -35px;
+    margin-right: -12px;
+    margin-bottom: 14px;
+  }
+}
  .u-footer {
-  background-image: none;
+  background-image: url("images/Screenshot2025-05-11at10.23.21PM.png");
+  background-position: 50% 100%;
+  background-size: cover;
 }
 
 .u-footer .u-sheet-1 {
-  min-height: 64px;
+  min-height: 300px;
+}
+
+.u-footer .u-line-1 {
+  transform-origin: left center 0px;
+  width: 1140px;
+  margin: 0 auto 0 0;
+}
+
+.u-footer .u-social-icons-1 {
+  height: 39px;
+  width: 39px;
+  min-width: 94px;
+  white-space: nowrap;
+  margin: 325px auto 0;
+}
+
+.u-footer .u-icon-1 {
+  height: 100%;
+  color: rgb(210, 34, 21) !important;
 }
 
 .u-footer .u-text-1 {
   font-weight: 700;
   letter-spacing: -2px;
   font-size: 1.875rem;
-  width: 417px;
-  margin: 8px auto;
+  margin: 12px 323px 0 287px;
 }
+@media (max-width: 1199px) {
+  .u-footer .u-sheet-1 {
+    min-height: 247px;
+  }
 
+  .u-footer .u-line-1 {
+    margin-right: initial;
+    margin-left: initial;
+    width: auto;
+  }
 
-@media (max-width: 767px) {
+  .u-footer .u-social-icons-1 {
+    width: 39px;
+  }
+
   .u-footer .u-text-1 {
-    margin-top: 76px;
+    margin-right: 223px;
+    margin-bottom: 60px;
+    margin-left: 187px;
+  }
+}
+@media (max-width: 991px) {
+  .u-footer .u-sheet-1 {
+    min-height: 189px;
+  }
+
+  .u-footer .u-text-1 {
+    margin-right: 113px;
+    margin-left: 77px;
+  }
+}
+@media (max-width: 767px) {
+  .u-footer .u-sheet-1 {
+    min-height: 142px;
+  }
+
+  .u-footer .u-text-1 {
+    font-size: 1.6666666666666665rem;
+    margin-right: 10px;
+    margin-left: 0;
   }
 }
 @media (max-width: 575px) {
+  .u-footer .u-sheet-1 {
+    min-height: 89px;
+  }
+
   .u-footer .u-text-1 {
-    width: 340px;
+    margin-right: 0;
   }
 }
 
