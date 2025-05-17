@@ -1,0 +1,33 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 496px;
+}
+
+.u-section-1 .u-custom-html-1 {
+  margin-bottom: 0;
+}
+
+.u-section-1 .u-form-1 {
+  height: 406px;
+  margin: 45px 303px 45px 267px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-form-1 {
+    margin-right: 203px;
+    margin-left: 167px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-form-1 {
+    margin-right: 93px;
+    margin-left: 57px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-form-1 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
