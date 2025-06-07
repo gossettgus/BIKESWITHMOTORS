@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <title>EXPLORE</title>
+    <title>REGISTER</title>
 <script>
     function gdprConfirmed() {
         return true;
@@ -22,11 +22,11 @@
     }
     </script>
     <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="EXPLORE.css" media="screen">
+<link rel="stylesheet" href="REGISTER.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 7.9.4, nicepage.com">
-    
+    <meta name="referrer" content="origin">
     
     
     
@@ -42,10 +42,104 @@
 		]
 }</script>
     <meta name="theme-color" content="#478ac9">
-    <meta property="og:title" content="EXPLORE">
+    <meta property="og:title" content="REGISTER">
     <meta property="og:description" content="">
     <meta property="og:type" content="website">
-  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <script>
+    function gdprConfirmed() {
+        return true;
+    }
+    function dynamicLoadScript() {
+        var script = document.createElement('script');
+        script.src = 'https://www.google.com/recaptcha/api.js?render=6Lc2LD4rAAAAAEg9ptV0LRn5ekoiqUbzE4aV_Vgj';
+        script.async = true;
+        document.body.appendChild(script);
+        script.onload = function() {
+            let event = new CustomEvent("recaptchaLoaded");
+            document.dispatchEvent(event);
+        };
+    }
+    function showRecaptchaError(error) {
+        error = error || '';
+        var formError = document.querySelector('.u-form-send-error');
+
+        if (formError) {
+            formError.innerText = 'Site Owner Error: ' + error.replace(/:[\s\S]*/, '');
+            formError.style.display = 'block';
+        }
+
+        console.error('Error in grecaptcha: ', error);
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+        var confirmButton = document.querySelector('.u-cookies-consent .u-button-confirm');
+        if (confirmButton) {
+            confirmButton.onclick = dynamicLoadScript;
+        }
+    });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            if (!gdprConfirmed()) {
+                return;
+            }
+            dynamicLoadScript();
+        });
+    </script>
+    <script>
+        document.addEventListener("recaptchaLoaded", function() {
+            if (!gdprConfirmed()) {
+                return;
+            }
+
+            (function (grecaptcha, sitekey, actions) {
+                var recaptcha = {
+                    execute: function (action, submitFormCb) {
+                        if (typeof grecaptcha === 'undefined' || typeof grecaptcha.execute !== 'function') {
+                            showRecaptchaError('reCAPTCHA script failed to load.');
+                            return;
+                        }
+
+                        grecaptcha.execute(sitekey, {action: action}).then((token) => {
+                            if (!token) {
+                                throw new Error('Empty token received from reCAPTCHA');
+                            }
+
+                            var forms = document.getElementsByTagName('form');
+
+                            for (var i = 0; i < forms.length; i++) {
+                                var response = forms[i].querySelector('[name="recaptchaResponse"]');
+
+                                if (!response) {
+                                    response = document.createElement('input');
+                                    response.setAttribute('type', 'hidden');
+                                    response.setAttribute('name', 'recaptchaResponse');
+                                    forms[i].appendChild(response);
+                                }
+
+                                response.value = token;
+                            }
+
+                            submitFormCb();
+                        }).catch((e) => {
+                            showRecaptchaError(e.message);
+                        });
+                    },
+
+                    executeContact: function (submitFormCb) {
+                        recaptcha.execute(actions['contact'], submitFormCb);
+                    }
+                };
+
+                window.recaptchaObject = recaptcha;
+            })(
+                grecaptcha,
+                
+                '6Lc2LD4rAAAAAEg9ptV0LRn5ekoiqUbzE4aV_Vgj',
+                {'contact': 'contact'}
+            );
+        });
+    </script>
+<meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
   <body data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="en"><!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GT-PZSCM57G" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) --><header class="u-clearfix u-header u-header" id="header"><div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-sheet-1">
@@ -97,19 +191,60 @@
         </nav>
         <p class="u-align-center u-custom-font u-font-arial u-text u-text-default u-text-1" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0">PROTOTYPE ELECTRIC DIRT BIKE PROJECT</p>
       </div></header>
-    <section class="u-clearfix u-section-1" id="block-1">
-      <div class="u-clearfix u-sheet u-valign-bottom-lg u-valign-bottom-md u-valign-bottom-sm u-valign-bottom-xs u-valign-middle-xl u-sheet-1">
-        <img class="custom-expanded u-image u-image-1" src="images/1.png" data-image-width="2690" data-image-height="1012">
+    <section class="u-align-center u-clearfix u-container-align-center u-image u-shading u-section-1" id="block-6" data-image-width="402" data-image-height="426">
+      <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
+        <h1 class="u-align-center u-text u-text-default u-title u-text-1">REGISTER A NACHO SIGHTING</h1>
+        <p class="u-align-center u-large-text u-text u-text-default u-text-variant u-text-2"> Gain access to exclusive specifications and backstory on The Nacho Electric Dirt Bike, as well as photos and videos of the building process. Ask questions and get feedback on your own personal builds.</p>
       </div>
     </section>
-    <section class="u-clearfix u-section-2" id="sec-2957">
-      <div class="u-clearfix u-sheet u-valign-bottom-lg u-valign-bottom-md u-valign-bottom-sm u-valign-bottom-xs u-valign-middle-xl u-sheet-1">
-        <img class="u-image u-image-default u-image-1" src="images/2.png" alt="" data-image-width="2690" data-image-height="1012">
-      </div>
-    </section>
-    <section class="u-clearfix u-section-3" id="sec-4325">
-      <div class="u-clearfix u-sheet u-valign-bottom-lg u-valign-bottom-md u-valign-bottom-sm u-valign-bottom-xs u-valign-middle-xl u-sheet-1">
-        <img class="u-image u-image-default u-image-1" src="images/3.png" alt="" data-image-width="2690" data-image-height="1012">
+    <section class="u-black u-clearfix u-section-2" id="block-7">
+      <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
+        <div class="u-carousel u-carousel-duration-250 u-carousel-fade u-form u-form-1" data-interval="0" data-u-ride="false" id="carousel-14bc">
+          <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form" style="padding: 10px;">
+            <div class="u-carousel-inner" role="listbox">
+              <div class="u-carousel-item u-form-step u-slide u-active">
+                <div class="u-form-group u-form-name">
+                  <label for="name-01d9" class="u-label">Name</label>
+                  <input type="text" placeholder="Enter your Name" id="name-01d9" name="name" class="u-input u-input-rectangle" required="">
+                </div>
+                <div class="u-form-email u-form-group">
+                  <label for="email-01d9" class="u-label">Email</label>
+                  <input type="email" placeholder="Enter a valid email address" id="email-01d9" name="email" class="u-input u-input-rectangle" required="">
+                </div>
+                <div class="u-form-group">
+                  <label for="message-01d9" class="u-label"> Unique Sighting Number</label>
+                  <input placeholder="​Enter the Number on the Back of Your Sighting Card" rows="4" cols="50" id="message-01d9" name="message" class="u-input u-input-rectangle" required="required" type="text">
+                </div>
+              </div>
+              <div class="u-carousel-item u-form-step u-slide">
+                <div class="u-form-group u-form-select u-form-group-4">
+                  <label for="select-0fa9" class="u-label">How would you describe yourself?</label>
+                  <div class="u-form-select-wrapper">
+                    <select id="select-0fa9" name="select" class="u-input u-input-rectangle">
+                      <option value="DIY Enthusiast" data-calc="">DIY Enthusiast</option>
+                      <option value="E-Bike Enthusiast" data-calc="">E-Bike Enthusiast</option>
+                      <option value="Just a normal person" data-calc="">Just a normal person</option>
+                    </select>
+                    <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="u-align-left u-form-group u-form-submit">
+              <a href="#" class="u-btn u-btn-step u-btn-step-prev u-button-style u-hidden">Back</a>
+              <a href="#" class="u-btn u-btn-step u-btn-step-next u-button-style">Next</a>
+              <a href="#" class="u-btn u-btn-submit u-button-style u-hidden">Submit</a>
+              <input type="submit" value="submit" class="u-form-control-hidden">
+            </div>
+            <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+            <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+            <input type="hidden" value="" name="recaptchaResponse">
+            <input type="hidden" name="formServices" value="3d1c1ee4-7556-5e94-cae4-fc5f0658f58c">
+            <input type="hidden" name="siteKey" value="6Lc2LD4rAAAAAEg9ptV0LRn5ekoiqUbzE4aV_Vgj">
+          </form>
+        </div>
+        <p class="u-align-center u-text u-text-default u-text-1">Don't have a sighting card?<br>Sighting cards are given out when you see The Nacho in real life. Keep looking!
+        </p>
       </div>
     </section>
     
