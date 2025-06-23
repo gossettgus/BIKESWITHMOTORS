@@ -43,7 +43,10 @@
 
 @media (max-width: 575px) {
   .u-section-2 .u-text-1 {
-    font-size: 3rem;
+    width: auto;
+    margin-top: 19px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
 } .u-section-3 {
   background-image: url("images/Screenshot2025-05-11at10.22.34PM.png");
