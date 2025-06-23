@@ -53,30 +53,28 @@
     font-size: 3rem;
   }
 }.u-section-2 .u-sheet-1 {
-  min-height: 486px;
+  min-height: 1039px;
 }
 
-.u-section-2 .u-form-1 {
-  width: 570px;
-  margin: 25px auto 0;
-}
-
-.u-section-2 .u-form-group-4 {
-  margin-left: 0;
+.u-section-2 .u-custom-html-1 {
+  height: auto;
+  min-height: 940px;
+  width: 644px;
+  margin: 0 auto;
 }
 
 .u-section-2 .u-text-1 {
-  margin: 25px auto 59px;
+  margin: 21px auto 20px;
 }
 
 @media (max-width: 767px) {
-  .u-section-2 .u-form-1 {
+  .u-section-2 .u-custom-html-1 {
     width: 540px;
   }
 }
 
 @media (max-width: 575px) {
-  .u-section-2 .u-form-1 {
+  .u-section-2 .u-custom-html-1 {
     width: 340px;
   }
 }
